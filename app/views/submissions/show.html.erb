@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Votes:</strong>
+  <%= @submission.votes %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @submission.title %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @submission.details %>
+</p>
+
+<p>
+  <strong>Submission time:</strong>
+  <%= @submission.submission_time %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @submission.url %>
+</p>
+
+<%= link_to 'Edit', edit_submission_path(@submission) %> |
+<%= link_to 'Back', submissions_path %>
